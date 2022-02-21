@@ -1,0 +1,3 @@
+[submodule "setup-private"]
+	path = setup-private
+	url = git@github.com:sakaeshalom/setup-private.git
