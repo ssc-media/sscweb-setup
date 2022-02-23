@@ -55,6 +55,17 @@ mysql -u ssc_test_user -p ssc_test_db < ssc_test_db.sql
 ## Upgrade to 5
 The steps are same as upgrading to 4 from 3.
 
+## Misc
+
+### Clear tables
+If you want to clear all tables,
+
+```
+mysql -u$u -p$p $db
+drop table if exists wp_options, wp_postmeta, wp_posts, wp_term_relationships, wp_term_taxonomy, wp_termmeta, wp_terms, wp_usermeta, wp_users, wp_links, wp_commentmeta, wp_comments;
+show tables;
+```
+
 ## See also
 - https://wordpress.org/support/article/upgrading-wordpress-extended-instructions/#upgrading-across-multiple-versions
   It is recommended to upgrade to 3.7, then upgrade to any version.
