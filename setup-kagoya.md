@@ -5,12 +5,14 @@
 ```
 adduser sakae
 passwd sakae
-echo 'sakae ALL=(ALL) ALL' >> /etc/sudoers
 su - sakae
 ssh-keygen -t rsa -b 8192
 ```
 
-その他、管理者一人ひとりのアカウントも同様に作成する。
+その他、管理者一人ひとりのアカウントも同様に作成し、
+`/etc/sudoers` にも設定する。
+
+Note: `sakae` は、`sudoers`には設定しない。
 
 各管理者は、 `.ssh/authorized_keys` を設定し、ログインできるようにする。
 
