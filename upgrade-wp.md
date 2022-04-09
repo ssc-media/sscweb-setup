@@ -32,24 +32,24 @@ ensure to setup the same user and database settings.
 The settings are written in `wp-config.php`.
 ```
 db='TBD'
-user='TBD'
-password='TBD'
+u='TBD'
+p='TBD'
 sudo mysql -u root <<-EOF
 create database $db;
-create user '$user'@'localhost' identified by '$password';
-grant all privileges on $db.* to '$user'@'localhost';
+create user '$u'@'localhost' identified by '$p';
+grant all privileges on $db.* to '$u'@'localhost';
 flush privileges;
 EOF
 ```
 
 On the EL7 host,
 ```
-mysqldump -u ssc_test_user -p ssc_test_db > ssc_test_db.sql
+mysqldump -u$u -p$p $db > ssc_test_db.sql
 ```
 
 On the EL8 host,
 ```
-mysql -u ssc_test_user -p ssc_test_db < ssc_test_db.sql
+mysql -u$u -p$p $db < ssc_test_db.sql
 ```
 
 ## Upgrade to 5
