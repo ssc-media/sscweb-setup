@@ -60,6 +60,7 @@ Note: You may setup both options.
    git add your_new_file
    ```
    (Replace `your_new_file` with the file name you want to add.)
+   Note: If you want to add a large file (such as video and music), please do not commit to git but directly send to the web server.
 5. Push the change
    ```
    git push
