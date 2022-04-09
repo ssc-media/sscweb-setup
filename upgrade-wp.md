@@ -53,7 +53,9 @@ mysql -u$u -p$p $db < ssc_test_db.sql
 ```
 
 ## Upgrade to 5
-The steps are same as upgrading to 4 from 3.
+~~The steps are same as upgrading to 4 from 3.~~
+
+Somehow, I failed to upgrade to 5. Currently running version 4.9.19.
 
 ## Misc
 
