@@ -1,5 +1,8 @@
 # Edit the website
 
+This document describes how to edit the website of Sakae Shalom Church.
+The supported platforms are macOS and Linux.
+
 ## Setup your access
 *This configuration is required only once for each user.*
 
