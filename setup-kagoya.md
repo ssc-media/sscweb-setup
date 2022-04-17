@@ -43,10 +43,13 @@ git submodule update --init
 
 ## その他のツールのインストール
 ```
-sudo dnf install telnet bind-utils vim-enhanced
+sudo dnf install telnet bind-utils vim-enhanced chrony
 sudo dnf install rsyslog mutt
 sudo dnf install tar
 sudo dnf config-manager --set-enabled powertools
 sudo dnf install epel-release
 sudo dnf config-manager --set-disabled epel epel-modular
+sudoedit /etc/chrony.conf # edit server lines
+sudo systemctl enable chronyd
+sudo systemctl start chronyd
 ```
